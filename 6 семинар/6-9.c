@@ -9,7 +9,8 @@ char* strmax(char** strings, size_t n) {
             pmax = strings[i];
         }
     }
-    return pmax;
+    printf("%s\n", pmax) // выводит "Wolf", т.е. сама функция работает правильно.
+    return pmax;// по какой-то причине функция char* не хочет возвращать pmax, тип которого char*, поэтому программа у меня не работает.
 }
 
 int main()
