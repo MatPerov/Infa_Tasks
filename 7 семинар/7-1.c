@@ -15,7 +15,6 @@ struct triangle
 };
 typedef struct triangle Triangle;
 
-// Тут нужно написать все необходимые функции
 void print_point(Point a) {
     printf("(%.2lf, %.2lf)", a.x, a.y);
 }
