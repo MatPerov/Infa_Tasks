@@ -27,4 +27,6 @@ int main() {
     p1->price = 750.0;
     *p = &*p1;
     print_book(**p);
+    free(p);
+    free(p1);
 }
