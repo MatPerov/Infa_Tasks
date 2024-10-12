@@ -17,6 +17,8 @@ void print_book(struct book b)
 
 int main() {
     Book* p = (Book*)malloc(sizeof(Book));
+    if (p == NULL)
+        printf("Error. Can't allocate memory!\n");
     p->pages = 1000;
     p->price = 750.0;
     strcpy(p->title, "Don Quixote");
