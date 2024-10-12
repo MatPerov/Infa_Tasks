@@ -31,4 +31,5 @@ int main() {
     print_book(p[0]);
     print_book(p[1]);
     print_book(p[2]);
+    free(p);
 }
