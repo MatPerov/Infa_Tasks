@@ -20,5 +20,5 @@ int main() {
     p->pages = 1000;
     p->price = 750.0;
     strcpy(p->title, "Don Quixote");
-    printf("%s %i %.2f", p->title, p->pages, p->price);
+    print_book(*p);
 }
