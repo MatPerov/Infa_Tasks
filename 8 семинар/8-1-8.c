@@ -31,4 +31,7 @@ int main() {
     p->pages = 1000;
     p->price = 750.0;
     print_book(*p);
+    free(pstr);
+    free(p);
+    free(pstr_heap);
 }
