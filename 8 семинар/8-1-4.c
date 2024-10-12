@@ -23,4 +23,5 @@ int main() {
     p->price = 750.0;
     strcpy(p->title, "Don Quixote");
     print_book(*p);
+    free(p);
 }
