@@ -22,4 +22,5 @@ int main() {
     Book a = { {"Don Quixote"},{1000},{750.0} };
     *p = &a;
     print_book(**p);
+    free(p);
 }
