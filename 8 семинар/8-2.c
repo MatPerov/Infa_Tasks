@@ -7,12 +7,18 @@ char** get_test_strings() {
 	if (p == NULL)
 		printf("Error. Can't allocate memory!\n");
 	p[0] = (char*)malloc(sizeof(char) * 4);
+	if (p[0] == NULL)
+		printf("Error. Can't allocate memory!\n");
 	strcpy(p[0], "Cat");
 	p[1] = (char*)malloc(sizeof(char) * 6);
+	if (p[1] == NULL)
+		printf("Error. Can't allocate memory!\n");
 	strcpy(p[1], "Mouse");
 	p[2] = (char*)malloc(sizeof(char) * 9);
+	if (p[2] == NULL)
+		printf("Error. Can't allocate memory!\n");
 	strcpy(p[2], "Elephant");
-    p[3] = NULL;
+    	p[3] = NULL;
 	return p;
 }
 void print_strings(FILE* stream, char** string_array) {
