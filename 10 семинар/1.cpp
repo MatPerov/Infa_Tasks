@@ -18,16 +18,16 @@ namespace mipt
 	}
 }
 using namespace mipt;
-/* используя using
+/* РёСЃРїРѕР»СЊР·СѓСЏ using
 using mipt::fefm::Point;
 using mipt::frtk::print;
 */
 int main() {
 	/*
-	Без using namespace
+	Р‘РµР· using namespace
 	mipt::fefm::Point p = {10,20};
 	mipt::frtk::print(p);
-	Используя using
+	РСЃРїРѕР»СЊР·СѓСЏ using
 	Point p = { 10,20 };
 	print(p);
 	*/
