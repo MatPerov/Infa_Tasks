@@ -3,7 +3,7 @@
 template<typename T>
 T triple(const T& x)
 {
-	//return x+x+x; - 1 ñïîñîá.
+	//return x+x+x; - 1 ÑĞ¿Ğ¾ÑĞ¾Ğ±.
 	return 3 * x;
 }
 std::string operator*(int n, std::string s) {
@@ -19,9 +19,9 @@ std::string triple(std::string str) {
 int main()
 {
 	int a = 10;
-	std::cout << triple(a) << std::endl;  // Ñğàáîòàåò, íàïå÷àòàåò 30
+	std::cout << triple(a) << std::endl;  // Ã‘Ã°Ã Ã¡Ã®Ã²Ã Ã¥Ã², Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã¥Ã² 30
 
 	std::string b = "Cat";
-	std::cout << triple(b) << std::endl;  // Îøèáêà, íåëüçÿ ÷èñëî 3 óìíîæàòü íà std::string
-	// Íóæíî ÷òîáû íàïå÷àòàëîñü CatCatCat
+	std::cout << triple(b) << std::endl;  // ÃÃ¸Ã¨Ã¡ÃªÃ , Ã­Ã¥Ã«Ã¼Ã§Ã¿ Ã·Ã¨Ã±Ã«Ã® 3 Ã³Ã¬Ã­Ã®Ã¦Ã Ã²Ã¼ Ã­Ã  std::string
+	// ÃÃ³Ã¦Ã­Ã® Ã·Ã²Ã®Ã¡Ã» Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã«Ã®Ã±Ã¼ CatCatCat
 }
