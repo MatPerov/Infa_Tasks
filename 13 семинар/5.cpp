@@ -22,15 +22,15 @@ int main()
 {
 	std::cout << std::hex;
 
-	int a = 0x1a2b3c4;
-	std::cout << a << std::endl;  // Äîëæåí íàïå÷àòàòü 1a2b3c4d
+	int a = 0x1a2b3c4d;
+	std::cout << a << std::endl;  // Ã„Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã²Ã¼ 1a2b3c4d
 	swapEndianness(a);
-	std::cout << a << std::endl;  // Äîëæåí íàïå÷àòàòü 4d3c2b1a
+	std::cout << a << std::endl;  // Ã„Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã²Ã¼ 4d3c2b1a
 	swapEndianness(a);
-	std::cout << a << std::endl;  // Äîëæåí íàïå÷àòàòü 1a2b3c4d
+	std::cout << a << std::endl;  // Ã„Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã²Ã¼ 1a2b3c4d
 
 	short b = 0x1a2b;
-	std::cout << b << std::endl;  // Äîëæåí íàïå÷àòàòü 1a2b
+	std::cout << b << std::endl;  // Ã„Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã²Ã¼ 1a2b
 	swapEndianness(b);
-	std::cout << b << std::endl;  // Äîëæåí íàïå÷àòàòü 2b1a
+	std::cout << b << std::endl;  // Ã„Ã®Ã«Ã¦Ã¥Ã­ Ã­Ã Ã¯Ã¥Ã·Ã Ã²Ã Ã²Ã¼ 2b1a
 }
