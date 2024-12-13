@@ -49,15 +49,15 @@ std::ostream& operator<<(std::ostream& out)
 int main()
 {
 	Modular<int, 7> a(10);
-	std::cout << a << std::endl; // Íàïå÷àòàåò 3
+	std::cout << a << std::endl; // ÃÃ Ã¯Ã¥Ã·Ã Ã²Ã Ã¥Ã² 3
 	a = (a + 8) * 4;
-	std::cout << a << std::endl; // Íàïå÷àòàåò 2
+	std::cout << a << std::endl; // ÃÃ Ã¯Ã¥Ã·Ã Ã²Ã Ã¥Ã² 2
 
 	Modular<int, 7> b(a);
 	b = b + 2;
 	a = a - b;
-	std::cout << a << std::endl; // Íàïå÷àòàåò 5
+	std::cout << a << std::endl; // ÃÃ Ã¯Ã¥Ã·Ã Ã²Ã Ã¥Ã² 5
 
-	Modular<short, 3> ñ(a);
-	std::cout << c << std::endl; // Íàïå÷àòàåò 2
+	Modular<short, 3> Ã±(a);
+	std::cout << c << std::endl; // ÃÃ Ã¯Ã¥Ã·Ã Ã²Ã Ã¥Ã² 2
 }
