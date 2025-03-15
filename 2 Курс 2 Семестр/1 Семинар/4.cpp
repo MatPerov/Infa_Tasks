@@ -6,7 +6,7 @@ int main()
     window.setFramerateLimit(60);
 
     sf::Font font;
-    if (!font.loadFromFile("ofont.ru_Caesar Dressing.ttf"))
+    if (!font.loadFromFile("ofont.ru_Caesar Dressing.ttf")) //файл шрифта есть в папке.
     {
         std::cout << "Error! Can't load font!" << std::endl;
         std::exit(1);
@@ -14,7 +14,7 @@ int main()
 
     sf::Text text;
     text.setFont(font);
-    text.setString(L"������ ���!");
+    text.setString(L"Привет Мир!");
     text.setCharacterSize(50);
     text.setFillColor(sf::Color(165, 42, 42));
     text.setStyle(sf::Text::Bold | sf::Text::Underlined);
