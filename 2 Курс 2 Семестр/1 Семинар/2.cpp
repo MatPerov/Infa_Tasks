@@ -21,4 +21,4 @@ int main()
 		window.draw(rectangle);
 		window.display();
 	}
-}
+}
