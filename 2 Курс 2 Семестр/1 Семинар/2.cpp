@@ -2,10 +2,11 @@
 #include <iostream>
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(800, 800), "Rotating Text", sf::Style::Default);
+	sf::RenderWindow window(sf::VideoMode(800, 800), "Rotating Square", sf::Style::Default);
 	window.setFramerateLimit(60);
-	
-	sf::RectangleShape rectangle(sf::Vector2f(80.0f,80.0f));
+
+	sf::RectangleShape rectangle(sf::Vector2f(200.0f, 200.0f));
+	rectangle.setOrigin(sf::Vector2f{ 100.0f, 100.0f });
 	rectangle.setPosition(sf::Vector2f{ 400, 400 });
 	rectangle.setFillColor(sf::Color(255, 215, 0));
 	while (window.isOpen())
