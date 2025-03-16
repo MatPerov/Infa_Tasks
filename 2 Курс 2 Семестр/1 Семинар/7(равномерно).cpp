@@ -20,7 +20,7 @@ int main()
             sf::Vector2f mousePosition = window.mapPixelToCoords(mousePixel);
             float Vx = mousePosition.x - circle.getPosition().x;
             float Vy = mousePosition.y - circle.getPosition().y;
-            circle.move(sf::Vector2f{ Vx / 100, Vy / 100 });
+            circle.move(sf::Vector2f{ Vx * 3 / sqrt(Vx*Vx+Vy*Vy), Vy * 3 / sqrt(Vx * Vx + Vy * Vy) });
         }
 
         window.clear(sf::Color(255, 248, 220));
