@@ -4,8 +4,11 @@ sf::Color getRandomColor()
 {
     static std::random_device rd;
     static std::mt19937 gen(rd());
-    std::uniform_int_distribution<uint8_t> d(0, 255);
-    return sf::Color{ d(gen), d(gen), d(gen) };
+    std::uniform_int_distribution<int> d(0, 255);
+    uint8_t a1 = d(gen);
+    uint8_t a2 = d(gen);
+    uint8_t a3 = d(gen);
+    return sf::Color{ a1, a2, a3 };
 }
 class Ball
 {
