@@ -1,0 +1,1 @@
+gcc -shared -o house.dll alice.c bob.c
