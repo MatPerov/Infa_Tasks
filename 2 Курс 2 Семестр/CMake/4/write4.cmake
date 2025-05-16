@@ -1,0 +1,7 @@
+set(animals "cat;mouse;dog;elephant;tiger;lion;axolotl;hippo;squirrel;wolf;shark;whale;bee;sloth;sheep;giraffe;scorpion")
+foreach(animal IN LISTS animals)
+  string(LENGTH "${animal}" len)
+  if(len GREATER 4)
+    message( "${animal}")
+  endif()
+endforeach()

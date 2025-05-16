@@ -1,0 +1,7 @@
+set(animals "cat;mouse;dog;elephant;tiger;lion;axolotl;hippo;squirrel;wolf;shark;whale;bee;sloth;sheep;giraffe;scorpion")
+foreach(animal IN LISTS animals)
+  string(SUBSTRING "${animal}" 0 1 first)
+  if(first STREQUAL "s")
+    message("${animal}")
+  endif()
+endforeach()
